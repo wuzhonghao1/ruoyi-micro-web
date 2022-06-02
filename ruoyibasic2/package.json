@@ -5,6 +5,7 @@
   "author": "若依",
   "license": "MIT",
   "scripts": {
+    "start": "vue-cli-service serve",
     "dev": "vue-cli-service serve",
     "build:prod": "vue-cli-service build",
     "build:stage": "vue-cli-service build --mode staging",
@@ -39,7 +40,7 @@
     "@riophae/vue-treeselect": "0.4.0",
     "axios": "0.24.0",
     "clipboard": "2.0.8",
-    "core-js": "3.19.1",
+    "core-js": "^3.19.1",
     "echarts": "4.9.0",
     "element-ui": "2.15.8",
     "file-saver": "2.0.5",

@@ -1,3 +1,3 @@
-start cmd /k "cd vuedemo && yarn install"
-start cmd /k "cd reactdemo && yarn install"
-start cmd /k "cd vuemain && yarn install"
+start cmd /k "cd ruoyi && yarn install"
+start cmd /k "cd ruoyibasic1 && yarn install"
+start cmd /k "cd ruoyibasic2 && yarn install"
