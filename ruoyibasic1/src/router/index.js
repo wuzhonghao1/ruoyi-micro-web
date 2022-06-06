@@ -88,6 +88,11 @@ export const constantRoutes = [
       },
     ],
   },
+  {
+    path: "/system/user",
+    component: () => import("@/views/system/user/index"),
+    hidden: true,
+  },
 ];
 
 // 动态路由，基于用户权限动态去加载
