@@ -1,6 +1,6 @@
 <template>
   <!--部门数据-->
-  <el-col :span="4" :xs="24">
+  <div>
     <div class="head-container">
       <el-input
         v-model="deptName"
@@ -24,7 +24,7 @@
         @node-click="handleNodeClick"
       />
     </div>
-  </el-col>
+  </div>
 </template>
 
 <script>

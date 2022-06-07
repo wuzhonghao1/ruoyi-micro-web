@@ -1,6 +1,6 @@
 <template>
   <!--用户数据-->
-  <el-col :span="20" :xs="24">
+  <div>
     <el-form
       :model="queryParams"
       ref="queryForm"
@@ -235,18 +235,18 @@
               <i class="el-icon-d-arrow-right el-icon--right"></i>更多
             </span>
             <el-dropdown-menu slot="dropdown">
-              <!-- <el-dropdown-item
+              <el-dropdown-item
                 command="handleResetPwd"
                 icon="el-icon-key"
                 v-hasPermi="['system:user:resetPwd']"
                 >重置密码</el-dropdown-item
-              > -->
-              <el-dropdown-item
+              >
+              <!-- <el-dropdown-item
                 command="handleAuthRole"
                 icon="el-icon-circle-check"
                 v-hasPermi="['system:user:edit']"
                 >分配角色</el-dropdown-item
-              >
+              > -->
             </el-dropdown-menu>
           </el-dropdown>
         </template>
@@ -455,7 +455,7 @@
         <el-button @click="upload.open = false">取 消</el-button>
       </div>
     </el-dialog>
-  </el-col>
+  </div>
 </template>
 
 <script>
