@@ -86,7 +86,7 @@ Vue.use(Element, {
 
 Vue.config.productionTip = false;
 
-new Vue({
+let app = new Vue({
   el: "#app",
   router,
   store,

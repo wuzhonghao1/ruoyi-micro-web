@@ -84,7 +84,17 @@ Vue.use(Element, {
 });
 
 Vue.config.productionTip = false;
-microApp.start();
+microApp.start({
+  "keep-alive": true,
+  globalAssets: {
+    js: [
+      "https://cdn.bootcss.com/vue/2.6.12/vue.min.js",
+      "https://unpkg.com/element-ui@2.15.8/lib/index.js",
+      "https://cdn.bootcss.com/vue-router/3.4.9/vue-router.min.js",
+    ], // js地址
+    css: ["https://unpkg.com/element-ui@2.15.8/lib/theme-chalk/index.css"], // css地址
+  },
+});
 new Vue({
   el: "#app",
   router,

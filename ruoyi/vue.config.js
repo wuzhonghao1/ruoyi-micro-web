@@ -58,6 +58,11 @@ module.exports = {
         "@": resolve("src"),
       },
     },
+    externals: {
+      vue: "Vue",
+      "element-ui": "ELEMENT",
+      "vue-router": "VueRouter",
+    },
     plugins: [
       // http://doc.ruoyi.vip/ruoyi-vue/other/faq.html#使用gzip解压缩静态文件
       new CompressionPlugin({
