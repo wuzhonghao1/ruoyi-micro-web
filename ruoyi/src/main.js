@@ -95,6 +95,7 @@ microApp.start({
     css: ["https://unpkg.com/element-ui@2.15.8/lib/theme-chalk/index.css"], // css地址
   },
 });
+microApp.setGlobalData({ AJAX_ADDRESS: process.env.VUE_APP_AJAX_ADDRESS });
 new Vue({
   el: "#app",
   router,
